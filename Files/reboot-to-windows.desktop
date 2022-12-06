@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+
+Type=Application
+Version=1.0
+Name=Reboot To Windows
+Name[zh_CN]=重启到Windows
+Exec=bash -c 'efibootmgr | grep "Windows Boot Manager" | tail -n 1 | head -c 8 | tail -c 4 | xargs sudo efibootmgr -n ; sleep 2s ; sudo systemctl reboot'
+Terminal=false
+Icon=reboot-to-windows
