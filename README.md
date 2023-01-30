@@ -1,2 +1,2 @@
 # Reboot-other-System
-One-click reboot to another system
+Dedicated One-click reboot to another system between HoloISO and Windows.
